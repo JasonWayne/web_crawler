@@ -29,7 +29,7 @@ class ProxyIPFinder:
     def store_in_file(self):
         file = open(self.__file_name, 'w')
         for ip in self.__ips:
-            file.write("%-15s\t%-4s\t%-s\n" % (ip[0], ip[1], ip[2]))
+            file.write("%-15s\t%-5s\t%-s\n" % (ip[0], ip[1], ip[2]))
         file.close()
 
 
